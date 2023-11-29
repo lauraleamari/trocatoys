@@ -1,0 +1,25 @@
+{
+  "name": "on28-ijs-projeto-laura-leamari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:jest": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari.git"
+  },
+  "keywords": [],
+  "author": "Laura Leamari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari/issues"
+  },
+  "homepage": "https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
