@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari.git"
+    "url": "git+https://github.com/lauraleamari/trocatoys.git"
   },
   "keywords": [],
   "author": "Laura Leamari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari/issues"
+    "url": "https://github.com/lauraleamari/trocatoys/issues"
   },
-  "homepage": "https://github.com/lauraleamari/on28-ijs-projeto-laura-leamari#readme",
+  "homepage": "https://github.com/lauraleamari/trocatoys#readme",
   "devDependencies": {
     "jest": "^29.7.0"
   }
