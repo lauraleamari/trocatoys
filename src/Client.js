@@ -1,4 +1,4 @@
-export class Client {
+class Client {
   #cpf;
   #phone;
   #cep;
@@ -52,3 +52,5 @@ export class Client {
     return Client.clientsList;
   }
 }
+
+module.exports = { Client }

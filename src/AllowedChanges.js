@@ -1,6 +1,6 @@
-import { Client } from "./Client.js";
-import { Toys } from "./Toys.js";
-import { MeetingPoint } from "./MeetingPoint.js";
+const {Client} = require("./Client");
+const {Toys} = require("./Toys");
+const {MeetingPoint} = require("./MeetingPoint");
 
 class AllowedChanges {
   constructor(rangeAge, location) {
@@ -24,6 +24,8 @@ class AllowedChanges {
     return (toy) => toy.rangeAge === this.rangeAge && toy.fromMount === this.location;
   }
 }
+
+module.exports = {AllowedChanges}
 
 // Criar clientes
 const client1 = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');

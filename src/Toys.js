@@ -1,4 +1,4 @@
-export class Toys {
+class Toys {
   type;
   rangeAge;
   emitsSound;
@@ -23,3 +23,5 @@ export class Toys {
     });
   }
 }
+
+module.exports = {Toys}

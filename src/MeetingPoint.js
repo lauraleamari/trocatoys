@@ -1,4 +1,4 @@
-export class MeetingPoint {
+class MeetingPoint {
   constructor(location) {
     this.location = location;
     this.clientsWithToys = [];
@@ -18,3 +18,5 @@ export class MeetingPoint {
     });
   }
 }
+
+module.exports = {MeetingPoint}
