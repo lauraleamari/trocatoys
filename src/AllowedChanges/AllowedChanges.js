@@ -1,6 +1,6 @@
-const {Client} = require("./Client");
-const {Toys} = require("./Toys");
-const {MeetingPoint} = require("./MeetingPoint");
+const {Client} = require("../Client/Client");
+const {Toys} = require("../Toys/Toys");
+const {MeetingPoint} = require("../MeetingPoint/MeetingPoint");
 
 class AllowedChanges {
   constructor(rangeAge, location) {
