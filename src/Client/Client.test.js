@@ -1,27 +1,45 @@
 const {Client} = require("./Client");
 
 describe('Testing Client Classes', () => {
-  test('Client should be initialized correctly', () => {
-    const client = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');
-    expect(client.id).toBe(1);
-    expect(client.name).toBe('João');
-    expect(client.cpf).toBe('123.456.789-01');
-    expect(client.yearBirth).toBe(1990);
-    expect(client.phone).toBe('99999-9999');
-    expect(client.cep).toBe('12345-678');
-    expect(client.toys).toEqual([]);
+  test('create a new client', () => {
+    const client = new Client(1, 'John Doe', '12345678901', 1990, '123-456-7890', '12345-678');
+    expect(client).toBeInstanceOf(Client);
   });
 
-  test('addClient should add the client to the clientsList', () => {
-    const client = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');
-    client.addClient();
-    expect(Client.clientsList).toHaveLength(1);
-    expect(Client.clientsList[0]).toEqual({
+  test('Checking client CPF', () => {
+    const client = new Client(1, 'John Doe', '12345678901', 1990, '123-456-7890', '12345-678');
+    expect(client.cpf).toBe('12345678901');
+
+    client.cpf = '98765432109';
+    expect(client.cpf).toBe('98765432109');
+  });
+
+  test('Checking client phone', () => {
+    const client = new Client(1, 'John Doe', '12345678901', 1990, '123-456-7890', '12345-678');
+    expect(client.phone).toBe('123-456-7890');
+
+    client.phone = '987-654-3210';
+    expect(client.phone).toBe('987-654-3210');
+  });
+
+  test('Checking client cep', () => {
+    const client = new Client(1, 'John Doe', '12345678901', 1990, '123-456-7890', '12345-678');
+    expect(client.cep).toBe('12345-678');
+
+    client.cep = '98765-432';
+    expect(client.cep).toBe('98765-432');
+  });
+
+  test('Add client to the clients list', () => {
+    const client = new Client(1, 'John Doe', '12345678901', 1990, '123-456-7890', '12345-678');
+    const clientsList = client.addClient();
+    expect(clientsList.length).toBe(5);
+    expect(clientsList[0]).toEqual({
       id: 1,
-      name: 'João',
-      cpf: '123.456.789-01',
+      name: 'John Doe',
+      cpf: '12345678901',
       yearBirth: 1990,
-      phone: '99999-9999',
+      phone: '123-456-7890',
       cep: '12345-678',
       toys: [],
     });

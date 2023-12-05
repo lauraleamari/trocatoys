@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701523875182" clover="3.2.0">
-  <project timestamp="1701523875183" name="All files">
-    <metrics statements="28" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="7" elements="40" coveredelements="30" complexity="0" loc="28" ncloc="28" packages="3" files="3" classes="3"/>
-    <package name="Client">
-      <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
-      <file name="Client.js" path="C:\Users\Laura.Leamari\Desktop\Estudos\imersao-js\on28-ijs-projeto-laura-leamari\src\Client\Client.js">
-        <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+<coverage generated="1701525307306" clover="3.2.0">
+  <project timestamp="1701525307307" name="All files">
+    <metrics statements="52" coveredstatements="50" conditionals="6" coveredconditionals="4" methods="19" coveredmethods="19" elements="77" coveredelements="73" complexity="0" loc="52" ncloc="52" packages="4" files="4" classes="4"/>
+    <package name="AllowedChanges">
+      <metrics statements="24" coveredstatements="22" conditionals="6" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <file name="AllowedChanges.js" path="C:\Users\Laura.Leamari\Desktop\Estudos\imersao-js\on28-ijs-projeto-laura-leamari\src\AllowedChanges\AllowedChanges.js">
+        <metrics statements="24" coveredstatements="22" conditionals="6" coveredconditionals="4" methods="7" coveredmethods="7"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="2" falsecount="2"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Client">
+      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+      <file name="Client.js" path="C:\Users\Laura.Leamari\Desktop\Estudos\imersao-js\on28-ijs-projeto-laura-leamari\src\Client\Client.js">
+        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
       </file>
     </package>
     <package name="MeetingPoint">
-      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="MeetingPoint.js" path="C:\Users\Laura.Leamari\Desktop\Estudos\imersao-js\on28-ijs-projeto-laura-leamari\src\MeetingPoint\MeetingPoint.js">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Toys">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Toys.js" path="C:\Users\Laura.Leamari\Desktop\Estudos\imersao-js\on28-ijs-projeto-laura-leamari\src\Toys\Toys.js">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
       </file>
     </package>
   </project>

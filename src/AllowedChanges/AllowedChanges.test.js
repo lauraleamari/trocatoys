@@ -1,42 +1,52 @@
 const {AllowedChanges} = require("./AllowedChanges");
 
 describe('Testing AllowedChanges Classes', () => {
-  test('AllowedChanges should be initialized correctly', () => {
-    const allowedChanges = new AllowedChanges('3-5', 'Toy Store');
-    expect(allowedChanges.rangeAge).toBe('3-5');
-    expect(allowedChanges.location).toBe('Toy Store');
+
+  let allowedChanges;
+  let client1, client2, toy1, toy2;
+
+  beforeEach(() => {
+    allowedChanges = new AllowedChanges(5, 'City');
+
+    client1 = { toys: [{ rangeAge: 5, fromMount: 'City' }] };
+    client2 = { toys: [{ rangeAge: 5, fromMount: 'City' }] };
+
+    toy1 = { rangeAge: 5, fromMount: 'City' };
+    toy2 = { rangeAge: 5, fromMount: 'City' };
   });
 
-  test('canExchange should return true for matching toys', () => {
-    const allowedChanges = new AllowedChanges('3-5', 'Toy Store');
-    const toy = new Toys('Doll', '3-5', false, false, 'Toy Store');
-    expect(allowedChanges.canExchange()(toy)).toBe(true);
+  test('makeExchange exchange toys between clients', () => {
+    const exchangeToys = allowedChanges.makeExchange();
+    exchangeToys(client1, toy1, client2, toy2);
+
+    expect(client1.toys).toEqual([toy2]);
+    expect(client2.toys).toEqual([toy1]);
   });
 
-  test('makeExchange should exchange toys between two clients', () => {
-    const allowedChanges = new AllowedChanges('3-5', 'Toy Store');
-    const client1 = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');
-    const client2 = new Client(2, 'Maria', '987.654.321-01', 1985, '88888-8888', '54321-876');
-    const toy1 = new Toys('Doll', '3-5', false, false, 'Toy Store');
-    const toy2 = new Toys('Car', '6-8', true, false, 'Supermarket');
-    toy1.addToys(client1);
-    toy2.addToys(client2);
+  test('makeExchange do nothing if one of the toys is not found in the client', () => {
+    const exchangeToys = allowedChanges.makeExchange();
+    exchangeToys(client1, { rangeAge: 3, fromMount: 'City' }, client2, toy2);
 
-    allowedChanges.makeExchange(client1, toy1, client2, toy2);
+    expect(client1.toys).toEqual([{ rangeAge: 5, fromMount: 'City' }]);
+    expect(client2.toys).toEqual([toy2]);
+  });
 
-    expect(client1.toys).toEqual([{
-      type: 'Car',
-      rangeAge: '6-8',
-      emitsSound: true,
-      emitsLight: false,
-      fromMount: 'Supermarket',
-    }]);
-    expect(client2.toys).toEqual([{
-      type: 'Doll',
-      rangeAge: '3-5',
-      emitsSound: false,
-      emitsLight: false,
-      fromMount: 'Toy Store',
-    }]);
+  test('canExchange should return true for toys within the allowed range and location', () => {
+    const exchangeToys = allowedChanges.makeExchange();
+    const checkExchange = allowedChanges.canExchange();
+
+    expect(checkExchange(toy1)).toBe(true);
+    expect(checkExchange(toy2)).toBe(true);
+  });
+
+  test('canExchange return false for toys outside the allowed range or location', () => {
+    const exchangeToys = allowedChanges.makeExchange();
+    const checkExchange = allowedChanges.canExchange();
+
+    const toyOutOfRange = { rangeAge: 3, fromMount: 'City' };
+    const toyWrongLocation = { rangeAge: 5, fromMount: 'Village' };
+
+    expect(checkExchange(toyOutOfRange)).toBe(false);
+    expect(checkExchange(toyWrongLocation)).toBe(false);
   });
 });

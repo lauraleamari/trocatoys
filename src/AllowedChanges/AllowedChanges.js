@@ -52,5 +52,5 @@ const allowedChanges = new AllowedChanges('3-5', 'Praça');
 // Fazer troca entre dois clientes
 allowedChanges.makeExchange(client1, toy1, client2, toy2);
 
-console.log(Client.clientsList);
-console.log(meetingPoint.clientsWithToys);
+// console.log(Client.clientsList);
+// console.log(meetingPoint.clientsWithToys);

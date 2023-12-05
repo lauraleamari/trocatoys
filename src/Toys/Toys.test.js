@@ -1,3 +1,4 @@
+const {Client} = require("../Client/Client");
 const {Toys} = require("./Toys");
 
 describe('Testing Toys Classes', () => {
@@ -10,7 +11,7 @@ describe('Testing Toys Classes', () => {
     expect(toy.fromMount).toBe('Toy Store');
   });
 
-  test('addToys should add the toy to the clients toys array', () => {
+  test('addToys add the toy to the clients toys array', () => {
     const client = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');
     const toy = new Toys('Doll', '3-5', false, false, 'Toy Store');
     toy.addToys(client);

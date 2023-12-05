@@ -1,3 +1,4 @@
+const {Client} = require("../Client/Client");
 const {MeetingPoint} = require("./MeetingPoint");
 
 describe('Testing MeetingPoint Classes', () => {
@@ -7,7 +8,13 @@ describe('Testing MeetingPoint Classes', () => {
     expect(meetingPoint.clientsWithToys).toEqual([]);
   });
 
-  test('addExchangePoint should add the client to clientsWithToys array', () => {
+  test('MeetingPoint constructor initializes properties correctly', () => {
+    const meetingPoint = new MeetingPoint('Shopping');
+    expect(meetingPoint.location).toBe('Shopping');
+    expect(meetingPoint.clientsWithToys).toEqual([]);
+  });
+
+  test('addExchangePoint add the client to clientsWithToys array', () => {
     const meetingPoint = new MeetingPoint('Park');
     const client = new Client(1, 'João', '123.456.789-01', 1990, '99999-9999', '12345-678');
     meetingPoint.addExchangePoint(client);
