@@ -17,8 +17,6 @@ Os pais se cadastram na plataforma, cadastram os brinquedos e ao pesquisar no ap
 
 ## Melhorias
 
-- [ ]  Revisar código
-- [ ]  Criar os teste
 - [ ]  Funcionalidades adicionais futuras:
     - [ ]  Histórico de trocas
     - [ ]  Alerta de novas trocas possíveis
