@@ -12,7 +12,7 @@ Os pais se cadastram na plataforma, cadastram os brinquedos e ao pesquisar no ap
 ## UML
 
 
-![UML](https://github.com/lauraleamari/trocatoys/blob/main/Diagrama-TrocaToys.jpg?raw=true)
+![UML](./Diagrama-TrocaToys.jpg)
 
 
 ## Melhorias
