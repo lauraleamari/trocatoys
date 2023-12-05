@@ -9,12 +9,17 @@ Pensando na quantidade de brinquedos que tenho em casa , na quantidade de vezes 
 Um app/site onde as pessoas se inscrevem com produtos que não são mais utilizados por seus filhos, para poder fazer troca com outros pais, proporcionando novas experiências para as crianças.
 
 Os pais se cadastram na plataforma, cadastram os brinquedos e ao pesquisar no app por pais no mesmo bairro que desejam realizar troca também, podem verificar os brinquedos, realizar uma conversa para determinar o local ou método de troca e o tempo no qual ficarão com o brinquedo.
+## UML
+
+
+![UML](https://github.com/lauraleamari/trocatoys/blob/main/Diagrama-TrocaToys.jpg?raw=true)
+
+
 ## Melhorias
 
 - [ ]  Revisar código
 - [ ]  Criar os teste
-- [ ]  Implementações futuras:
-    - [ ]  Funcionalidades adicionais
+- [ ]  Funcionalidades adicionais futuras:
     - [ ]  Histórico de trocas
     - [ ]  Alerta de novas trocas possíveis
     - [ ]  Avaliação das trocas, estado dos brinquedos
