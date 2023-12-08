@@ -21,7 +21,7 @@ Um app/site onde os pais podem se cadastrar e cadastrar os brinquedos que estão
 Os pais se cadastram na plataforma, cadastram os brinquedos e ao pesquisar os brinquedos que podem ser trocados, podendo verificar por tipo, idade, se tem luz, se faz som, após isso entra em contato com o outro pai para poder combinar o local para a troca do mesmo e por quanto  tempo ficarão com o brinquedo.
 ## Tecnologias utilizadas
 
-Javascript, Orientação a Objeto, Jest, código limpo.
+Javascript, Orientação a Objeto, Jest, Código limpo.
 
 ## UML
 
